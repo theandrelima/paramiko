@@ -1195,7 +1195,7 @@ class Channel(ClosingContextManager):
             if self.closed:
                 # this doesn't seem useful, but it is the documented behavior
                 # of Socket
-                raise socket.error("Socket is closed - TEST!!!)
+                raise socket.error("Socket is closed - TEST!!!")
             size = self._wait_for_send_window(size)
             if size == 0:
                 # eof or similar
